@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Art Gallery</title>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .row{
+            background-color: aliceblue;
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+        .column{
+            flex: 25%;
+            padding: 5px;
+        }
+        img{
+            width: 100%;
+            height: auto;
+        }
+        header{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav{
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        nav ul{
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li{
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a{
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover{
+            color: yellow;
+        }
+
+    </style>
+</head>
+<body>
+    <header>Art Gallery</header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="container">
+       <!-- To create a 4x3 grid -->
+         <div class="row">
+              <div class="column">
+                <img src="images/1.jpg" alt="Image 1">
+              </div>
+              <div class="column">
+                <img src="images/2.jpg" alt="Image 2">
+              </div>
+              <div class="column">
+                <img src="images/3.jpg" alt="Image 3">
+              </div>
+              <div class="column">
+                <img src="images/4.jpg" alt="Image 4">
+              </div>
+</html>
