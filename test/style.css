@@ -2,15 +2,21 @@ body{
     margin: 0;
     padding: 0;
     background-color: #FCFCFC;
+    overflow-x: hidden;
+    font-family:'Times New Roman', Times, serif;
 }
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    width: 100%;
+    max-width: 100%;
     background-color: #FCFCFC;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+   
+}
+.header .logo{
+    font-size: larger;
+
 }
 
 .header .nav {
@@ -18,7 +24,8 @@ body{
     gap: 15px;
     justify-content: flex-end;
     align-items: center;
-    flex-grow: 1; 
+    flex-grow: 1;
+    font-size: larger; 
 }
 
 .header .nav a {
@@ -39,7 +46,7 @@ body{
     justify-content: center;
     align-items: center;
     
-    width: 100%; 
+    max-width: 100%; 
     height: fit-content;
     padding: 96px;
     gap: 52px;
@@ -48,7 +55,7 @@ body{
 
 }
 .hero-image{
-    width: 100%;
+    max-width: 100%;
     height: auto;
     gap: 0px;
     
@@ -62,7 +69,7 @@ body{
     height: auto;
     border-radius: 16px;
 }
-.main-gallery{
+#main-gallery{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 20px;
@@ -70,13 +77,14 @@ body{
     width: 100%;
     height: auto;
     align-items: center;
-    justify-content: center;
+    justify-items: center;
 
 }
-.main-gallery img{
+#main-gallery img{
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+
 }
 .footnote{
     color: gray;
@@ -84,7 +92,7 @@ body{
     margin: 0;
     padding: 0;
 }
-.desc {
+#desc {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -100,7 +108,7 @@ body{
     align-items: center;
 }
 .desc2 p{
-    text-align: right;
+    text-align: left;
 }
 .main-gallery img:hover{
     transform: scale(1.1);
@@ -119,4 +127,35 @@ body{
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
+}
+html{
+    scroll-behavior: smooth;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;  
+    padding: 20px;  
+}
+.footer button{
+    border: 1.5px solid #5C5C5C33;
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+    
+    
+
+}
+.footer button:hover{
+    background-color: black;
+    color: white;
+    border: 1.5px solid white;
+
+}
+.footer p{
+    color: gray;
+    font-size: small;
+    margin: 0;
+    padding: 0;
 }
