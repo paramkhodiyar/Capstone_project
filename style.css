@@ -42,8 +42,7 @@ body{
 }
 
 .header .nav a:hover {
-    color: rgb(255, 255, 255);
-    background-color: black;
+    border-bottom: 2px solid black;
     border-radius: 4px;
 }
 
@@ -153,15 +152,11 @@ html{
     background-color: white;
     border-radius: 8px;
     padding: 10px;
-    
-    
-
 }
 .footer button:hover{
     background-color: black;
     color: white;
     border: 1.5px solid white;
-
 }
 .footer p{
     color: gray;
@@ -174,6 +169,25 @@ html{
     display: block;
     justify-content: center;
     align-items: center;
+    align-items: center;
+    padding: 96px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.bottom{
+    display: flex;
+    justify-content: center;
+
+}
+.final_table{
+   width: 100%;
+}
+.final_table th{
+    text-align: left;
+}
+.final_table td{
+    color: #2121219E;
+    text-align: left;
+
 }
 
 @keyframes breathing {
