@@ -1,83 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Art Gallery</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <style>
-        .container{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .row{
-            background-color: aliceblue;
-            width: 100%;
-            display: flex;
-            flex-wrap: wrap;
-
-        }
-        .column{
-            flex: 25%;
-            padding: 5px;
-        }
-        img{
-            width: 100%;
-            height: auto;
-        }
-        header{
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-        nav{
-            background-color: black;
-            color: white;
-            text-align: center;
-            padding: 10px;
-        }
-        nav ul{
-            list-style-type: none;
-            padding: 0;
-        }
-        nav ul li{
-            display: inline;
-            margin: 0 10px;
-        }
-        nav ul li a{
-            color: white;
-            text-decoration: none;
-        }
-        nav ul li a:hover{
-            color: yellow;
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>Art Gallery</header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-    </nav>
-    <div class="container">
-       <!-- To create a 4x3 grid -->
-         <div class="row">
-              <div class="column">
-                <img src="images/1.jpg" alt="Image 1">
-              </div>
-              <div class="column">
-                <img src="images/2.jpg" alt="Image 2">
-              </div>
-              <div class="column">
-                <img src="images/3.jpg" alt="Image 3">
-              </div>
-              <div class="column">
-                <img src="images/4.jpg" alt="Image 4">
-              </div>
+    <header class="header">
+        <div class="logo">MyPortfolio</div>
+        <nav class="nav">
+            <a href="#">Home</a>
+            <a href="#main-gallery">Portfolio</a>
+            <a href="#desc">Contact</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="up">
+            <h1>Welcome to my Creative World</h1>
+            <div class="hero-image">
+                <img
+                    src="https://s3-alpha-sig.figma.com/img/9ebc/3631/131b76546c1a7793cb2272b69009491c?Expires=1734912000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=leMOD2ssPAIUVKHi1EcKF1Llsrj~yp~~XJ~~RmWeX9gZWP-kdxXWFMuDTER9nz5VP7xWAZZMPa0F0EhmkFHP3s8YxKbVusE-aKqaR6G4X7N~zKmWuJFQce4oKEpJwK1F04-6ZJDihVp7nLSw8U0KhsGO4SQneNPs6toj5d9I2LfGNIdzp6ZOIG2V4KncYb0CSTilZfIA3uQPu216j7FKcYIbxi0Bi4I5UG~AIt5~wg5ed1eJXSk~H4-vX2mESfNZLy2NAQ6ImCg~grlpWAjyPlLqXavaDkzCdGAHPt5T3AUG5bqIgsTSEBgkR5Kt8Xh5Ewtl-XJWWC5HktJr4NurMA__">
+            </div>
+        </div>
+        <div id="main-gallery">
+            <div class="image">
+                <img src="media/img1.png" alt="Sketchy Design 1">
+                <p>Sketchy Design 1</p>
+                <p class="footnote">Illustrations</p>
+            </div>
+            <div class="image">
+                <img src="media/img2.png" alt="Sketchy Design 2">
+                <p>Sketchy Design 2</p>
+                <p class="footnote">Illustrations</p>
+            </div>
+            <div class="image">
+                <img src="media/img3.png" alt="Sketchy Design 3">
+                <p>Sketchy Design 3</p>
+                <p class="footnote">Illustrations</p>
+            </div>
+            <div class="image">
+                <img src="media/img4.png" alt="Sketchy Design 4">
+                <p>Sketchy Design 4</p>
+                <p class="footnote">Illustrations</p>
+            </div>
+            <div class="image">
+                <img src="media/img5.png" alt="Sketchy Design 5">
+                <p>Sketchy Design 5</p>
+                <p class="footnote">Illustrations</p>
+            </div>
+            <div class="image">
+                <img src="media/img6.png" alt="Sketchy Design 6">
+                <p>Sketchy Design 6</p>
+                <p class="footnote">Illustrations</p>
+            </div>
+            <div class="image">
+                <img src="media/img7.png" alt="Sketchy Design 7">
+                <p>Sketchy Design 7</p>
+                <p class="footnote">Illustrations</p>
+            </div>
+            <div class="image">
+                <img src="media/img8.png" alt="Sketchy Design 8">
+                <p>Sketchy Design 8</p>
+                <p class="footnote">Illustrations</p>
+            </div>
+            <div class="image">
+                <img src="media/img9.png" alt="Sketchy Design 9">
+                <p>Sketchy Design 9</p>
+                <p class="footnote">Illustrations</p>
+            </div>
+
+        </div>
+        <div id="desc">
+            <h3>I am an artist who loves to create hand-drawn sketches that evoke a sense of creativity and
+                imperfection.</h3>
+        </div>
+        <div class="contact">
+            <div class="content">
+                <p class="description">My work is inspired by organic, imperfect, and artistic elements. I strive to
+                    create designs that look as if they were meticulously sketched by hand, capturing the essence of
+                    creativity.</p>
+            </div>
+        </div>
+
+        <div class="contactme">
+            <h4>Contact Me</h4>
+            <div class="contact_table">
+                <table class="final_table">
+                    <thead class="theader">
+                        <th>Project Type</th>
+                        <th>Team</th>
+                        <th>Date</th>
+                    </thead>
+                    <tbody class="tbody">
+                        <tr>
+                            <td>Illustration</td>
+                            <td>Jane Artist</td>
+                            <td>April 2023</td>
+                        </tr>
+                        <tr>
+                            <td>Design</td>
+                            <td>John Sketcher</td>
+
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>&copy; 2023 Art Gallery</p>
+        <button>Contact Me</button>
+    </footer>
+
+</body>
+
 </html>
