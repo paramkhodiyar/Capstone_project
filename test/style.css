@@ -16,6 +16,13 @@ body{
 }
 .header .logo{
     font-size: larger;
+    font-weight: 700;
+     color: black;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    background-color: white;
+    
 
 }
 
@@ -84,8 +91,13 @@ body{
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1);
+    animation: breathing 2s infinite ease-in-out;
+  }
 
-}
+
 .footnote{
     color: gray;
     font-size: small;
@@ -100,22 +112,19 @@ body{
     text-align: center; 
     font-size: 48px;
 }
-.desc2{
+.contact{
+    max-width:100% ;
+    height: auto;
     display: flex;
-    flex-direction: column;
-    flex: end;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-}
-.desc2 p{
-    text-align: left;
-}
-.main-gallery img:hover{
-    transform: scale(1.1);
-    transition: transform 1s;
- 
 
-  
+}
+.contact .content{
+    text-align: left;
+    width: 50%;
+    font-family: 'Courier New', Courier, monospace;
+
 }
 .up h1{
     font-family: Domine;
@@ -159,3 +168,17 @@ html{
     margin: 0;
     padding: 0;
 }
+@keyframes breathing {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+    50% {
+      transform: scale(1.01);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    }
+  }
