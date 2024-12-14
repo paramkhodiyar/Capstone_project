@@ -99,7 +99,7 @@ body{
     transform: scale(1); 
 }
 
-img:hover {
+#main-gallery img:hover {
     filter: none; 
     transform: scale(1.05); 
 }
