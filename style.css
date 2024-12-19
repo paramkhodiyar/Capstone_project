@@ -3,7 +3,7 @@ body{
     padding: 0;
     background-color: #FCFCFC;
     overflow-x: hidden;
-    font-family:'Times New Roman', Times, serif;
+    
 }
 .header {
     display: flex;
@@ -11,8 +11,7 @@ body{
     align-items: center;
     padding: 20px;
     max-width: 100%;
-    background-color: #FCFCFC;
-   
+    background-color: #FCFCFC;  
 }
 .header .logo{
     font-size: x-large;
@@ -22,8 +21,6 @@ body{
     padding: 8px;
     border-radius: 4px;
     background-color: white;
-    
-
 }
 
 .header .nav {
@@ -57,17 +54,13 @@ body{
     gap: 52px;
     border-bottom: 2px;
     background-color: #FCFCFC;
-
 }
 .hero-image{
     max-width: 100%;
     height: auto;
     gap: 0px;
-    
     border: 1.5px 0px 0px 0px;
     opacity: 0px;
-    
-
 }
 .hero-image img{
     width: 100%;
@@ -77,13 +70,13 @@ body{
 #main-gallery{
     display: grid;
     grid-template-columns: repeat(3,1fr);
+    /* grid-template-columns:repeat(auto-fill,minmax(200px,1fr)); */
     gap: 20px;
     padding: 20px;
     width: 100%;
     height: auto;
     align-items: center;
     justify-items: center;
-
 }
 #main-gallery img{
     max-width: 100%;
@@ -108,7 +101,10 @@ body{
     filter: blur(5px); 
     transform: scale(0.95); 
 }
-
+.image p{
+    font-family: Outfit;
+    font-size: small;
+}
 
 .footnote{
     color: gray;
@@ -123,6 +119,7 @@ body{
     padding: 96px; 
     text-align: center; 
     font-size: 48px;
+    font-family: Domine ;
 }
 #contact{
     max-width:100% ;
@@ -135,7 +132,7 @@ body{
 #contact .content{
     text-align: left;
     width: 50%;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Outfit';
 
 }
 #up h1{
@@ -145,9 +142,6 @@ body{
     line-height: 120px;
     letter-spacing: -0.02em;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-
 }
 html{
     scroll-behavior: smooth;
@@ -159,6 +153,7 @@ html{
     align-items: center;
     max-width: 100%;  
     padding: 20px;  
+    
 }
 .footer button{
     border: 1.5px solid #5C5C5C33;
@@ -176,6 +171,7 @@ html{
     font-size: small;
     margin: 0;
     padding: 0;
+    font-family: Domine;
 
 }
 .contactme{
@@ -184,7 +180,7 @@ html{
     align-items: center;
     align-items: center;
     padding: 96px;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: Outfit;
 }
 .bottom{
     display: flex;
